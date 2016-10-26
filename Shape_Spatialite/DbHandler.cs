@@ -14,7 +14,7 @@ namespace Shape_Spatialite
 
         public DbHandler()
         {
-            conString = @"Data Source=C:\Users\HDSL115\Desktop\SQL Lite\BGTSyncSpLite.sqlite";
+            conString = @"Data Source=C:\Users\HDSL115\Desktop\Desktop\SQL Lite\BGTSyncSpLite.sqlite";
         }
 
         public DataTable GetDataTable(string query)

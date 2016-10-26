@@ -27,7 +27,7 @@ namespace Shape_Spatialite
             {
                 if (dc.ColumnName != "the_geom" && dc.ColumnName != "geom")
                 {
-                    fs.DataTable.Columns.Add(dc.ColumnName, dc.DataType);
+                    fs.DataTable.Columns.Add(dc.ColumnName, dc.DataType == typeof(System.Object) ? typeof(System.String) : dc.DataType);
                 }
             }
 

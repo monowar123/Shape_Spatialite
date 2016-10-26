@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.btnCreateShape = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCreateShape
             // 
-            this.btnCreateShape.Location = new System.Drawing.Point(80, 64);
+            this.btnCreateShape.Location = new System.Drawing.Point(81, 36);
             this.btnCreateShape.Name = "btnCreateShape";
             this.btnCreateShape.Size = new System.Drawing.Size(97, 23);
             this.btnCreateShape.TabIndex = 0;
@@ -41,11 +42,22 @@
             this.btnCreateShape.UseVisualStyleBackColor = true;
             this.btnCreateShape.Click += new System.EventHandler(this.btnCreateShape_Click);
             // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(81, 82);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(97, 23);
+            this.btnInsert.TabIndex = 1;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(265, 212);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnCreateShape);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -57,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCreateShape;
+        private System.Windows.Forms.Button btnInsert;
 
     }
 }
